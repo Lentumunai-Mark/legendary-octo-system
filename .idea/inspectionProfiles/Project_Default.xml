@@ -1,0 +1,39 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="IncorrectHttpHeaderInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="customHeaders">
+        <set>
+          <option value="  nameOfTheChild" />
+          <option value="    placeOfBirth" />
+          <option value="    dateOfBirth" />
+          <option value="    gender" />
+          <option value="    weight" />
+          <option value="    mothersAge" />
+          <option value="    mothersName" />
+          <option value="    maritalStatus" />
+          <option value="    occupation" />
+          <option value="{" />
+          <option value="}" />
+          <option value="  placeOfBirth" />
+          <option value="  dateOfBirth" />
+          <option value="  gender" />
+          <option value="  weight" />
+          <option value="  mothersName" />
+          <option value="  mothersAge" />
+          <option value="  occupation" />
+          <option value="  maritalStatus" />
+          <option value="  &quot;nameOfTheChild&quot;" />
+          <option value="  &quot;placeOfBirth&quot;" />
+          <option value="  &quot;dateOfBirth&quot;" />
+          <option value="  &quot;gender&quot;" />
+          <option value="  &quot;weight&quot;" />
+          <option value="  &quot;mothersName&quot;" />
+          <option value="  &quot;mothersAge&quot;" />
+          <option value="  &quot;occupation&quot;" />
+          <option value="  &quot;maritalStatus&quot;" />
+        </set>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

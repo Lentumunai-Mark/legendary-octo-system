@@ -3,11 +3,16 @@ package com.BornChilren.RestfulAPI.Model;
 import java.time.LocalDate;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 @Entity
 @Table(name = "BornChildren")
 public class BornChildren {
-    //am taking the assumption that the registration number is a number and unique to every child hence can qualify to be an ID
+    //assumption : registrationNumber can be used to uniquely identify a child
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long registrationNumber;
     private String nameOfTheChild;
     private String placeOfBirth;
@@ -16,7 +21,7 @@ public class BornChildren {
     private int weight;
     private String mothersName;
     private int mothersAge;
-    private String occupation;
+    private String mothersOccupation;
     private String maritalStatus;
     //alternative was to use lombok
     /*no argument constructor*/
@@ -35,7 +40,7 @@ public class BornChildren {
         this.weight = weight;
         this.mothersName = mothersName;
         this.mothersAge = mothersAge;
-        this.occupation = occupation;
+        this.mothersOccupation = occupation;
         this.maritalStatus = maritalStatus;
 
 
@@ -51,7 +56,7 @@ public class BornChildren {
         this.weight = weight;
         this.mothersName = mothersName;
         this.mothersAge = mothersAge;
-        this.occupation = occupation;
+        this.mothersOccupation = occupation;
         this.maritalStatus = maritalStatus;
 
     }
@@ -119,12 +124,12 @@ public class BornChildren {
         this.mothersAge = mothersAge;
     }
 
-    public String getOccupation() {
-        return occupation;
+    public String getMothersOccupation() {
+        return mothersOccupation;
     }
 
-    public void setOccupation(String occupation) {
-        this.occupation = occupation;
+    public void setMothersOccupation(String occupation) {
+        this.mothersOccupation = occupation;
     }
 
     public String getMaritalStatus() {
